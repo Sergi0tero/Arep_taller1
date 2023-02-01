@@ -8,13 +8,17 @@ Se construyo esta aplicacion con el objetivo de consultar la información de pel
 
 ## Extensibilidad
 
+
 ## Patrones
 - Singleton
 - Servidor fachada
 
 ## Modular
+- Cliente
+- Pruebas
+- Servidor
 
-## Organizado
+## Organización
 
 ## Pruebas
 
