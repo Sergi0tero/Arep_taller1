@@ -6,9 +6,9 @@ public class HttpServer {
     private static final String omdapi = "http://www.omdbapi.com/";
     private static final String APIKEY = "&apikey=d36df8d8";
     private static final String searchTitle = "?t=";
-    private static HttpConnection httpConnection = new HttpConnection();
+    private static Cache cache = Cache.getInstance();
     public static void main(String[] args) throws IOException {
-        boolean loadPage = true;
+        boolean loadPage = false;
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(35000);
@@ -39,6 +39,8 @@ public class HttpServer {
                     inputLine = inputLine.replace("GET /hello?name=", "");
                     inputLine = inputLine.replace(" HTTP/1.1", "");
                     response = inputLine;
+                } else if (inputLine.contains("GET / HTTP/1.1") || inputLine.contains("GET /favicon.ico HTTP/1.1")){
+                    loadPage = true;
                 }
                 if (!in.ready()) {
                     break;
@@ -68,7 +70,7 @@ public class HttpServer {
 
     public static String JSONResponse(String response) throws IOException{
         System.out.println("response" + response);
-        return httpConnection.searchOnAPI(omdapi + searchTitle + response + APIKEY);
+        return cache.searchMovie(omdapi + searchTitle + response + APIKEY, response);
     }
 
     public static String htmlWithForms(){
