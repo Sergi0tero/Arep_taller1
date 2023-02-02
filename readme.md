@@ -1,3 +1,6 @@
+## Autor:
+### Sergio Andrés Otero Herrera
+
 # Taller 1 AREP
 En este taller se hace la creacion de una API sin uso de librerias, con el fin de entender el funcionamiento de las mismas.
 
@@ -21,4 +24,4 @@ Se construyo esta aplicacion con el objetivo de consultar la información de pel
 ## Organización
 
 ## Pruebas
-
+Se realizaron pruebas haciendo uso de hilos, con el objetivo de verificar el buen funcionamiento y la concurrencia del codigo.
