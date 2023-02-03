@@ -36,6 +36,8 @@ mvn exec:java
 ## Diseño
 El proyecto fue realizado en Java. El ciclo de vida empieza por el usuario, quien da el nombre de la pelicula que quiere buscar, esto lo obtenemos por medio del servidor HTTP. Este servidor procesa los datos y nos da el titulo de la pelicula ingresada por el usuario, manda una peticion al cache. Dentro del Caché se verifica si esta información ya esta guardada en la memoria local. Si este no es el caso, se hace la peticion a la clase de HTTPConnection. En este cliente, se hace la conexión a la API externa de www.omdbapi.com
 
+![image](https://user-images.githubusercontent.com/98189066/216498258-ad302cb5-6ae8-4a1e-9629-8156276fcab5.png)
+
 ## Patrones
 - Singleton
 - Servidor fachada
