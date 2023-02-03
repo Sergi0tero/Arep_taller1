@@ -34,9 +34,7 @@ mvn exec:java
 ```
 
 ## Diseño
-
-## Extensibilidad
-No es un proyecto especialmente extensible, pues se tienen que hacer varios cambios si se quiere agregar o cambiar la api que se consulta.
+El proyecto
 
 ## Patrones
 - Singleton
