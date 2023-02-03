@@ -27,8 +27,12 @@ Ahora, si queremos verificar la integridad del codigo
 ```
 mvn package
 ```
+## Correr el código:
+Para correr la clase main, la cual se encuentra en HTTPServer, corremos el siguiente comando en la terminal:
 
-End with an example of getting some data out of the system or using it for a little demo
+```
+mvn exec:java
+```
 
 ## Diseño
 
