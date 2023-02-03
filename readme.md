@@ -34,16 +34,18 @@ mvn exec:java
 ```
 
 ## Diseño
-El proyecto
+El proyecto fue realizado en Java. El ciclo de vida empieza por el usuario, quien da el nombre de la pelicula que quiere buscar, esto lo obtenemos por medio del servidor HTTP. Este servidor procesa los datos y nos da el titulo de la pelicula ingresada por el usuario, manda una peticion al cache. Dentro del Caché se verifica si esta información ya esta guardada en la memoria local. Si este no es el caso, se hace la peticion a la clase de HTTPConnection. En este cliente, se hace la conexión a la API externa de www.omdbapi.com
 
 ## Patrones
 - Singleton
 - Servidor fachada
 
 ## Modular
-- Cliente
-- Pruebas
+Estas son las diferentes capaz que podemos ver:
+- Conexion
 - Servidor
+- Caché.
+El cliente HTTPConnector se conecta con el cliente y con la API externa para brindarle la informacion necesaria al usuario. Le envia esta informacion al servidor HTTP, quien es el que se ocupa de mostrar al usuario la informacion y de recibirla. Por ultimo, tenemos el caché. El caché nos mantiene la informacion temporalmente en la maquina local, evitando asi peticiones extra a la API externa, evadiendo tiempos prolongados innecesarios de carga.
 
 ## Pruebas
 Se realizaron pruebas haciendo uso de hilos, con el objetivo de verificar el buen funcionamiento y la concurrencia del codigo.
