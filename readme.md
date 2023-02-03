@@ -45,6 +45,7 @@ Estas son las diferentes capaz que podemos ver:
 - Conexion
 - Servidor
 - Caché.
+
 El cliente HTTPConnector se conecta con el cliente y con la API externa para brindarle la informacion necesaria al usuario. Le envia esta informacion al servidor HTTP, quien es el que se ocupa de mostrar al usuario la informacion y de recibirla. Por ultimo, tenemos el caché. El caché nos mantiene la informacion temporalmente en la maquina local, evitando asi peticiones extra a la API externa, evadiendo tiempos prolongados innecesarios de carga.
 
 ## Pruebas
