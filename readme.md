@@ -12,8 +12,7 @@ Se construyo esta aplicacion con el objetivo de consultar la información de pel
 - JAVA
 - MVN
 
-### Instalación
-
+## Instalación
 De querer usar este codigo, se tiene que hacer lo siguiente:
 
 Se clona el repositorio
