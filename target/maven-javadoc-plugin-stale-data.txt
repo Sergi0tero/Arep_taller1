@@ -1,0 +1,41 @@
+@options
+@packages
+@argfile
+-encoding
+'Cp1252'
+-protected
+-sourcepath
+'D:/U/9no semestre/AREP/mi-primera-app/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/U/9no semestre/AREP/mi-primera-app/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'mi-primera-app 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'D:/U/9no semestre/AREP/mi-primera-app/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'mi-primera-app 1.0-SNAPSHOT API'
+edu.escuelaing.arem.ASE.app
+'D:/U/9no semestre/AREP/mi-primera-app/src/main/java/edu/escuelaing/arem/ASE/app/Cache.java'
+'D:/U/9no semestre/AREP/mi-primera-app/src/main/java/edu/escuelaing/arem/ASE/app/HttpConnection.java'
+'D:/U/9no semestre/AREP/mi-primera-app/src/main/java/edu/escuelaing/arem/ASE/app/HttpServer.java'
+D:\U\9no semestre\AREP\mi-primera-app\src\main\java = 1675128771191
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\allclasses-frame.html = 1675384591783
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\allclasses-noframe.html = 1675384591785
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\constant-values.html = 1675384591734
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\deprecated-list.html = 1675384591781
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\help-doc.html = 1675384591791
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\index-all.html = 1675384591778
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\index.html = 1675384591787
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\overview-tree.html = 1675384591773
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\package-list = 1675384591714
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\script.js = 1675384591793
+D:\U\9no semestre\AREP\mi-primera-app\target\site\apidocs\stylesheet.css = 1675384392345

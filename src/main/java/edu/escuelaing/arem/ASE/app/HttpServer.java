@@ -2,11 +2,25 @@ package edu.escuelaing.arem.ASE.app;
 
 import java.net.*;
 import java.io.*;
-public class HttpServer { 
+
+/**
+ * Web server which user interacts with
+ */
+public class HttpServer {
+
     private static final String omdapi = "http://www.omdbapi.com/";
     private static final String APIKEY = "&apikey=d36df8d8";
     private static final String searchTitle = "?t=";
-    private static Cache cache = Cache.getInstance();
+    private static final Cache cache = Cache.getInstance();
+
+    /**
+     * This class is the one that creates the web server and runs it on port 35000,
+     * it receives the title of the movie and send it to the cache. Then take the result
+     * and show it to the user
+     *
+     * @param args
+     * @throws IOException
+     */
     public static void main(String[] args) throws IOException {
         boolean loadPage = false;
         ServerSocket serverSocket = null;
@@ -68,11 +82,22 @@ public class HttpServer {
         serverSocket.close();
     }
 
+    /**
+     * Gets the title of the movie and return the information of the movie
+     *
+     * @param response title of the movie
+     * @return returns th information of the movie
+     * @throws IOException
+     */
     public static String JSONResponse(String response) throws IOException{
         System.out.println("response" + response);
         return cache.searchMovie(omdapi + searchTitle + response + APIKEY, response);
     }
 
+    /**
+     * Create the form where the user can consult the movie
+     * @return form
+     */
     public static String htmlWithForms(){
         return "<!DOCTYPE html>\n" +
                 "<html>\n" +

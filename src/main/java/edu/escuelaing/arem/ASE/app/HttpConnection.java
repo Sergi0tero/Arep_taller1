@@ -6,10 +6,19 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * Connects the server with the external API
+ */
 public class HttpConnection {
 
     private static final String USER_AGENT = "Mozilla/5.0";
 
+    /**
+     * Search for the movie title in the API
+     * @param GET_URL URL of the API where the movie can be found
+     * @return information of the movie
+     * @throws IOException
+     */
     public String searchOnAPI(String GET_URL) throws IOException {
 
         URL obj = new URL(GET_URL);
