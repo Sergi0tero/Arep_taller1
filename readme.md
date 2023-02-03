@@ -12,10 +12,28 @@ Se construyo esta aplicacion con el objetivo de consultar la información de pel
 - JAVA
 - MVN
 
+### Instalación
+
+De querer usar este codigo, se tiene que hacer lo siguiente:
+
+Se clona el repositorio
+
+```
+git clone https://github.com/judibec/Taller_1_AREP.git
+```
+
+Ahora, si queremos verificar la integridad del codigo
+
+```
+mvn package
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
 ## Diseño
 
 ## Extensibilidad
-
+No es un proyecto especialmente extensible, pues se tienen que hacer varios cambios si se quiere agregar o cambiar la api que se consulta.
 
 ## Patrones
 - Singleton
@@ -26,7 +44,13 @@ Se construyo esta aplicacion con el objetivo de consultar la información de pel
 - Pruebas
 - Servidor
 
-## Organización
-
 ## Pruebas
 Se realizaron pruebas haciendo uso de hilos, con el objetivo de verificar el buen funcionamiento y la concurrencia del codigo.
+
+Para ejecutarlas, corremos el siguiente comando:
+```
+mvn test
+```
+
+## Version
+1.0
