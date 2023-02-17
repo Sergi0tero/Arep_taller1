@@ -18,7 +18,7 @@ De querer usar este codigo, se tiene que hacer lo siguiente:
 Se clona el repositorio
 
 ```
-git clone https://github.com/judibec/Taller_1_AREP.git
+git clone https://github.com/Sergi0tero/Arep_taller1.git
 ```
 
 Ahora, si queremos verificar la integridad del codigo
